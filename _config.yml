@@ -1,0 +1,10 @@
+title: Gulf Card — Privacy Policy
+description: Privacy Policy for the Gulf Card iOS app — Arabic + English.
+theme: jekyll-theme-cayman
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - CONTACT.md
