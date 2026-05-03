@@ -5,8 +5,8 @@ lang: en
 
 # Privacy Policy — Gulf Card
 
-**Last updated:** 2026-04-29
-**Effective date:** 2026-04-29
+**Last updated:** 2026-05-03
+**Effective date:** 2026-05-03
 
 [العربية](ar/) · English
 
@@ -227,7 +227,7 @@ accept the updated policy.
 
 For privacy questions, requests, or complaints:
 
-- **Email**: <dpo@gulfcard.app>
+- **Email**: <dev.hamam@gmail.com>
 - **Subject line**: include "PDPL", "GDPR", or "CCPA" if applicable so
   we can route faster.
 
