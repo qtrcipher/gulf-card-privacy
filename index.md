@@ -8,8 +8,6 @@ lang: en
 **Last updated:** 2026-05-03
 **Effective date:** 2026-05-03
 
-[العربية](ar/) · English
-
 ---
 
 This Privacy Policy explains how **Gulf Card** ("we", "us", "the app")
@@ -235,6 +233,4 @@ We aim to respond to data-rights requests within **30 days**.
 
 ---
 
-This policy is published in **Arabic** (primary) and **English**
-(secondary). If the two versions differ in meaning, the
-[Arabic version](ar/) controls.
+This policy is published in **English** only.
