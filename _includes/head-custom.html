@@ -1,6 +1,6 @@
 <script>
   document.documentElement.lang = "{{ page.lang | default: site.lang | default: 'en' }}";
-  document.documentElement.dir = "{{ page.dir | default: 'ltr' }}";
+  document.documentElement.dir = "{{ page.text_direction | default: 'ltr' }}";
 </script>
 <style>
   html[dir="rtl"] .main-content {

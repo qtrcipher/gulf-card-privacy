@@ -1,7 +1,8 @@
 ---
 title: Privacy Policy
+description: Privacy Policy for the Gulf Card iOS app.
 lang: en
-dir: ltr
+text_direction: ltr
 ---
 
 # Privacy Policy — Gulf Card

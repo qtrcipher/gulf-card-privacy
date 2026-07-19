@@ -1,7 +1,8 @@
 ---
 title: سياسة الخصوصية
+description: سياسة الخصوصية لتطبيق ورقة الخليج على iOS.
 lang: ar
-dir: rtl
+text_direction: rtl
 ---
 
 <div lang="ar" dir="rtl" markdown="1">
