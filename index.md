@@ -1,236 +1,203 @@
 ---
 title: Privacy Policy
 lang: en
+dir: ltr
 ---
 
 # Privacy Policy — Gulf Card
 
-**Last updated:** 2026-05-03
-**Effective date:** 2026-05-03
+[العربية]({{ '/ar/' | relative_url }})
 
----
+**Last updated:** July 19, 2026<br>
+**Effective date:** July 19, 2026
 
-This Privacy Policy explains how **Gulf Card** ("we", "us", "the app")
-collects, uses, and protects your information when you use the iOS app.
-Gulf Card is operated by Hamam Alabdulla, based in Saudi Arabia. By using
-the app you agree to the practices described in this policy.
+This Privacy Policy explains how Gulf Card ("we," "us," or "the app"),
+operated by Hamam Alabdulla, collects, uses, shares, retains, and protects
+information when you use the Gulf Card iOS app. If you do not agree with this
+policy, please do not use the app.
 
 ## 1. Information we collect
 
-### From you, when you sign in or play
+### Account and profile information
 
-- **Account identifier (UID).** When you launch the app for the first
-  time, Firebase Authentication issues an anonymous UID. If you sign in
-  with **Sign in with Apple**, the UID is linked to your Apple ID. The
-  UID is the only identifier we use to associate your gameplay with you.
-- **Email address.** Optional. If you choose Sign in with Apple, you can
-  share your real email or use Apple's "Hide My Email" relay. We never
-  see your real email if you choose to hide it.
-- **Display name.** A name of your choosing, shown to opponents at the
-  table and on leaderboards. You can change it any time in Profile.
-- **Country.** A coarse country code (e.g. SA, AE) you select in Profile.
-  We use it for matchmaking pools and regional content; we do not collect
-  precise location.
-- **Date of birth (hash only).** When you sign up we ask your date of
-  birth to confirm you're at least 17. The raw date is never stored —
-  only a SHA-256 hash with a per-user salt, used to verify the same DOB
-  is presented in case of disputes. The raw value never leaves your
-  device.
+- **Account identifiers.** Firebase Authentication creates a unique user ID,
+  including for guest accounts. If you use Sign in with Apple, Apple provides
+  an account identifier and, depending on your choices, your name and either
+  your email address or an Apple private relay address.
+- **Profile information.** We may store the display name, country, language,
+  and notification preferences you provide. Your display name and limited
+  gameplay profile may be visible to other players.
+- **Age verification.** You submit a date of birth to a secured Cloud Function
+  to confirm that you meet the minimum age. We do not persist the raw date of
+  birth. We store a SHA-256 hash created with a random per-user salt, along
+  with the verification time. An under-minimum attempt may create a
+  PII-free security event without the submitted date or its hash.
 
-### From your gameplay
+### Gameplay and integrity information
 
-- **Match data.** Every move you make is sent to our server-authoritative
-  game engine (deals, bids, plays, scores, declarations). This is
-  necessary for the game to function — without it the server cannot
-  determine whether your moves are legal.
-- **Chat messages.** Optional in-room and club chat. Messages pass
-  through a profanity filter and rate limiter before being saved.
-- **Reports you submit.** When you report another player's chat message,
-  display name, or club name, we store the report (target, reason,
-  timestamp, your UID) for moderation review.
-- **Audit log.** For anti-cheat and anti-collusion analysis, we record
-  per-move metadata (seat, move type, latency, timestamp). This log is
-  never shown to other players.
-- **Purchase history.** When you buy a chip pack or a VIP subscription
-  through the App Store, we record the transaction ID, amount, and the
-  resulting chip / VIP grant.
+We process room membership, matches, cards and game actions, bids, scores,
+leaderboard results, timestamps, move latency, and fairness-verification data.
+We also process anti-cheat and abuse-prevention signals, including Firebase
+App Check and limited device or network signals made available by our service
+providers. The current app does **not** provide in-app chat, so we do not
+collect chat messages.
 
-### From your device
+### Purchases and advertising
 
-- **Push notification token (FCM).** If you opt in to notifications, we
-  store an FCM token so we can send you turn-your-move alerts and match
-  invites. You can revoke at any time in iOS Settings → Notifications.
-- **Crash reports.** Firebase Crashlytics collects stack traces and
-  device model when the app crashes. No personally identifying
-  information is included unless you explicitly add it via in-app
-  feedback.
-- **Analytics events.** Firebase Analytics records aggregate usage
-  events (screen views, button taps) without personal identifiers.
+- **App Store purchases.** Apple processes payment details. We receive and
+  retain signed transaction identifiers, original transaction identifiers,
+  product IDs, purchase and expiry dates, entitlement status, and refund or
+  revocation events to deliver chips or subscriptions, prevent duplicate
+  credits, and maintain accounting records. We do not receive your full card
+  or bank-account details.
+- **Advertising.** The app includes Google Mobile Ads, including rewarded-ad
+  support. Google may process device, usage, and ad-interaction information
+  under its terms and your consent choices. iOS App Tracking Transparency
+  controls whether the advertising identifier (IDFA) is available for
+  cross-app tracking. Denying permission prevents the app from granting that
+  identifier to the advertising SDK.
 
-### From third-party SDKs (with your consent)
+### Device, diagnostics, and usage information
 
-- **AdMob attribution.** If you grant App Tracking Transparency consent
-  when prompted, AdMob may receive a device identifier (IDFA) for ad
-  attribution. If you decline, AdMob serves only non-personalized ads
-  and we do not transmit any device identifier.
-- **Apple Game Center.** If you sign in to Game Center, Apple shares
-  your stable Game Center player ID with us so we can post your scores
-  to leaderboards. Game Center is optional and you can opt out in
-  Profile → Game Center.
+- **Notifications.** If enabled, we store an FCM registration token, an
+  app-scoped device identifier, APNs environment, and notification preferences
+  to deliver turn, invitation, and reward reminders.
+- **Diagnostics and analytics.** Firebase Crashlytics and Firebase Analytics
+  may process crash traces, diagnostics, device and app information, and usage
+  events. Firebase Remote Config and App Check process technical information
+  needed to configure and protect the app.
+- **Network information.** Firebase and Google Cloud may temporarily process
+  IP addresses, user-agent information, and request metadata to operate and
+  secure their services.
 
-## 2. How we use your information
+### Apple Game Center
 
-- **To run the game.** Match data, audit logs, and the UID are all used
-  to enforce the game's rules server-side, deal cards via our
-  provably-fair shuffle, and prevent cheating.
-- **To communicate with you.** Push notifications you opted into,
-  account-related emails (account deletion confirmations, etc.).
-- **To improve the app.** Crashlytics + Analytics tell us where the app
-  crashes or where users drop off in flows; we use this to fix bugs.
-- **To deliver ads.** AdMob serves ads. Personalized ads only with
-  your ATT consent; otherwise, generic ads only.
-- **To process payments.** Apple processes the actual payment; we
-  receive only the transaction ID and the SKU you bought.
-- **To moderate user content.** Profanity filter, length cap, rate
-  limiter, and the user-report flow described above.
-- **To comply with law.** We respond to lawful requests from authorities
-  and preserve information when required.
+If you enable Game Center, Apple processes your Game Center identity and the
+app submits scores and achievements. Game Center is governed by Apple's terms
+and privacy policy.
 
-We do not sell your personal information.
+We do not intentionally collect precise location, contacts, microphone audio,
+or payment-card details.
 
-## 3. Sharing your information
+## 2. How we use information
 
-We share data only with:
+We use information to:
 
-- **Service providers.** Firebase (Google) for authentication,
-  database, push notifications, crash reporting, analytics, and remote
-  config. AdMob (Google) for advertising. Apple for App Store payments
-  and Game Center. These providers process data on our behalf under
-  their own contracts and certifications.
-- **Other players you choose to play with.** Your display name,
-  country, and bot-or-human flag are visible to opponents at the table.
-- **Authorities, when required by law.** Subpoenas, court orders, or
-  similar instruments compel disclosure.
+- authenticate users and maintain accounts;
+- operate multiplayer and AI games and synchronize game state;
+- provide wallets, purchases, subscriptions, rewards, and leaderboards;
+- send notifications selected by the user;
+- detect cheating, fraud, abuse, and security incidents;
+- diagnose crashes, measure app performance, and improve features;
+- provide advertising and measure ad delivery, subject to applicable choices;
+- answer support and privacy requests; and
+- comply with legal, accounting, and App Store obligations.
 
-## 4. Your rights
+## 3. How we disclose information
 
-If you are in **Saudi Arabia**, the **Personal Data Protection Law
-(PDPL)** grants you these rights:
+We disclose information only as needed to:
 
-- **Right to be informed** about the processing of your data (this policy).
-- **Right to access** the data we hold about you.
-- **Right to rectification** of inaccurate or incomplete data.
-- **Right to erasure** (account deletion).
-- **Right to data portability** (export your data in machine-readable
-  format).
-- **Right to object** to processing for non-essential purposes.
+- **Google and Firebase:** authentication, Firestore, Cloud Functions, Cloud
+  Storage, Cloud Messaging, App Check, Remote Config, Analytics, Crashlytics,
+  and Google Mobile Ads;
+- **Apple:** Sign in with Apple, APNs, StoreKit/App Store purchases, and Game
+  Center;
+- **Other players:** display name, country or regional indicator, game actions,
+  match results, and leaderboard information needed for social gameplay; and
+- **Authorities or successors:** when required by law, to protect rights and
+  safety, or as part of a business transfer subject to appropriate safeguards.
 
-If you are in the **European Economic Area** or the **United Kingdom**,
-the **GDPR / UK-GDPR** grants you the same set of rights, plus the
-right to lodge a complaint with your supervisory authority.
+We require service providers that process user data for us to protect it in a
+manner consistent with this policy and applicable requirements. We do not sell
+personal information for money. Advertising-related transfers may be treated
+as "sharing" under some laws; you can limit tracking through iOS privacy
+settings and can contact us to exercise applicable rights.
 
-If you are in **California**, the **CCPA / CPRA** grants you the right
-to know, delete, correct, and opt out of "sale" — though we do not sell
-personal information.
+Provider information:
 
-To exercise any of these rights, use the in-app flows in
-**Profile → Privacy**:
+- [Privacy and Security in Firebase](https://firebase.google.com/support/privacy/)
+- [Google Privacy Policy](https://policies.google.com/privacy)
+- [Apple Privacy Policy](https://www.apple.com/legal/privacy/)
 
-- **Export your data** — generates a downloadable archive within 30
-  days.
-- **Delete your account** — cascades deletion across Firebase Auth,
-  Firestore, and Cloud Storage. The deletion is final.
+## 4. Retention and deletion
 
-For inquiries the in-app flows don't cover, contact us at the address
-in section 12.
+We retain account and profile information while an account is active and only
+as long as reasonably needed for the purposes described above. Gameplay,
+security, and fairness records may be retained to operate the service, resolve
+disputes, prevent abuse, and enforce game integrity. Notification tokens are
+kept until replaced, disabled, or the account is deleted. Analytics,
+diagnostics, and advertising data follow the applicable provider settings and
+retention controls.
 
-## 5. Data retention
+Purchase ledger records may be retained after account deletion when reasonably
+necessary for fraud prevention, refunds, accounting, tax, or other legal
+obligations. They are marked as belonging to a deleted user and are not used to
+recreate the account. Temporary data-export files and download links expire.
+Backups and provider systems may take additional time to complete deletion.
 
-| Data category | Retention period |
-|---|---|
-| Active account profile | Until you request deletion |
-| Match state (live) | Cleared at match end, except for shuffle proofs (see below) |
-| Shuffle proofs (`/shuffleProofs/`) | 90 days post match-end (provably-fair audit) |
-| Audit log (anti-cheat) | 90 days post match-end |
-| Crash logs (Crashlytics) | 90 days (Firebase default) |
-| Analytics events | 14 months (Firebase default) |
-| Purchase records | 7 years (tax / legal retention) |
-| Deleted account residue | Up to 90 days for anti-fraud, then irreversibly deleted |
+To delete your account in the app, open **Profile → Danger Zone → Delete
+Account** and confirm. This removes the Firebase account and profile tree,
+notification tokens, private wallet data, App Store ownership mappings,
+avatars and pending export files, removes waiting-room membership, and
+anonymizes applicable active-match references. Apple purchase records subject
+to legal retention are handled as described above. You may also contact us at
+the email below.
 
-## 6. International data transfers
+## 5. Your choices and rights
 
-Firebase and AdMob are operated by Google in data centers worldwide.
-Your data is currently primarily processed in Google Cloud's
-**`us-central1`** region. We will migrate to **`me-central1`** (Saudi
-Arabia / UAE) when that region becomes generally available for
-Firestore.
+Depending on where you live, you may have rights to access, correct, export,
+delete, restrict, or object to processing of your personal information, and to
+withdraw consent where processing relies on consent.
 
-For transfers out of the European Economic Area we rely on the
-**EU-US Data Privacy Framework** (where applicable) or **Standard
-Contractual Clauses (SCCs)** approved by the European Commission.
+You can:
 
-## 7. Age restriction (17+)
+- edit supported profile and notification settings in the app;
+- disable notifications in the app or iOS Settings;
+- change tracking permission in iOS Settings;
+- request an export through the available in-app privacy flow; and
+- delete your account using the in-app process described above.
 
-Gulf Card is rated **17+**. We collect a date of birth at sign-up to
-verify you meet this minimum. If you indicate you are under 17, your
-sign-up is blocked and no account is created.
+For any request you cannot complete in the app, email
+[hamam@gccapp.com](mailto:hamam@gccapp.com). We may need to verify your
+identity before completing a request.
 
-The app uses **virtual chips** for in-game wagering. Chips have **no
-real-money value** — they cannot be cashed out, traded for currency,
-or used outside the app. There is no real-money gambling.
+## 6. International processing
 
-## 8. Children's privacy
+Our providers operate globally. Information may be processed in countries
+other than your own, including the United States, where Firebase Authentication
+and our `us-central1` Cloud Functions operate. Where required, transfers are
+handled using contractual or other legally recognized safeguards.
 
-Gulf Card is not directed at children under 17. We do not knowingly
-collect personal data from anyone under that age. If we discover that
-data has been collected from a person under 17, we will delete it and
-the associated account.
+## 7. Children and age restriction
 
-If you are a parent or guardian who believes your child has provided
-us data, please contact us at the address in section 12.
+Gulf Card is intended for users aged 17 and older. If a submitted date of birth
+indicates that the user is under 17, access is blocked. If you believe that we
+have collected personal information from someone under 17, contact us so we
+can investigate and delete it as appropriate.
 
-## 9. Security
+Virtual chips have no cash value and cannot be redeemed, transferred for
+currency, or used outside the app.
 
-- All network traffic uses **HTTPS / TLS**.
-- Authentication relies on **Firebase Authentication** with **Apple's
-  Sign in with Apple** as the only third-party provider.
-- **Firebase App Check** verifies that requests originate from the
-  legitimate Gulf Card app, blocking impersonation and abuse.
-- Game logic is **server-authoritative** — a malicious client cannot
-  cheat by tampering with local state.
-- The provably-fair shuffle uses **SHA-256 commitment-reveal** — you
-  can independently verify every hand was dealt fairly via the
-  "Verify this hand" UI.
-- Data at rest in Firebase Cloud Firestore and Cloud Storage is
-  **encrypted by default** by Google.
+## 8. Security
 
-No system is perfectly secure. If you believe your account has been
-compromised, please contact us immediately.
+We use measures designed to protect information, including HTTPS/TLS,
+Firebase Authentication, App Check, server-authoritative game logic,
+restricted Firestore and Storage rules, access controls, and encryption
+provided by Google Cloud. No method of storage or transmission is completely
+secure, so we cannot guarantee absolute security.
 
-## 10. Cookies and similar technologies
+## 9. Changes to this policy
 
-Gulf Card does not use browser cookies. The app stores small amounts
-of preference data (theme, language, hand-sort preference, feature
-flags) in **iOS UserDefaults** — this storage never leaves your device.
+We may update this policy when the app, providers, or legal requirements
+change. We will publish the revised version here and update the date above.
+Where required, we will provide additional notice or request consent.
 
-## 11. Changes to this policy
-
-We will post any change here, update the "Last updated" date at the
-top, and — for changes that materially expand what data we collect or
-how we use it — show an in-app notification at next launch with a
-summary of the change. By continuing to use the app after a change you
-accept the updated policy.
-
-## 12. Contact / Data Protection Officer
+## 10. Contact
 
 For privacy questions, requests, or complaints:
 
-- **Email**: <dev.hamam@gmail.com>
-- **Subject line**: include "PDPL", "GDPR", or "CCPA" if applicable so
-  we can route faster.
+**Email:** [hamam@gccapp.com](mailto:hamam@gccapp.com)
 
-We aim to respond to data-rights requests within **30 days**.
-
----
-
-This policy is published in **English** only.
+This English policy and the [Arabic version]({{ '/ar/' | relative_url }})
+describe the same practices. If a translation differs, the English version
+controls to the extent permitted by applicable law.

@@ -1,0 +1,25 @@
+<script>
+  document.documentElement.lang = "{{ page.lang | default: site.lang | default: 'en' }}";
+  document.documentElement.dir = "{{ page.dir | default: 'ltr' }}";
+</script>
+<style>
+  html[dir="rtl"] .main-content {
+    direction: rtl;
+    text-align: start;
+    font-family: "Noto Sans Arabic", "SF Arabic", Tahoma, sans-serif;
+    line-height: 1.8;
+    letter-spacing: 0;
+  }
+
+  html[dir="rtl"] .main-content ul,
+  html[dir="rtl"] .main-content ol {
+    padding-inline-start: 2em;
+    padding-left: 0;
+  }
+
+  html[dir="rtl"] .main-content code,
+  html[dir="rtl"] .main-content a[href^="mailto:"] {
+    direction: ltr;
+    unicode-bidi: isolate;
+  }
+</style>
