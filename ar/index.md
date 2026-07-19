@@ -11,6 +11,8 @@ text_direction: rtl
 
 [English]({{ '/' | relative_url }})
 
+[الدعم]({{ '/ar/support/' | relative_url }})
+
 **تاريخ آخر تحديث:** ١٩ يوليو ٢٠٢٦<br>
 **تاريخ السريان:** ١٩ يوليو ٢٠٢٦
 

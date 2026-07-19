@@ -9,6 +9,8 @@ text_direction: ltr
 
 [العربية]({{ '/ar/' | relative_url }})
 
+[Support]({{ '/support/' | relative_url }})
+
 **Last updated:** July 19, 2026<br>
 **Effective date:** July 19, 2026
 
