@@ -156,6 +156,7 @@ You can:
 
 - edit supported profile and notification settings in the app;
 - disable notifications in the app or iOS Settings;
+- revisit ad consent choices in Profile when privacy options are available;
 - change tracking permission in iOS Settings;
 - request an export through the available in-app privacy flow; and
 - delete your account using the in-app process described above.
