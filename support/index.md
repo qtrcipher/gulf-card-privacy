@@ -10,7 +10,7 @@ text_direction: ltr
 [العربية]({{ '/ar/support/' | relative_url }})
 
 Need help with Gulf Card? Email
-[hamam@gccapp.com](mailto:hamam@gccapp.com) and include a short description
+[hamam@gccapps.com](mailto:hamam@gccapps.com) and include a short description
 of the issue, your device model, and your iOS version. Do not send passwords,
 payment-card details, or verification codes.
 

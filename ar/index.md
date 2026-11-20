@@ -159,7 +159,7 @@ App Check وبعض إشارات الجهاز أو الشبكة المحدودة 
 - حذف حسابك من خلال العملية الموضحة أعلاه.
 
 لأي طلب لا يمكنك إتمامه داخل التطبيق، راسلنا على
-<a dir="ltr" href="mailto:hamam@gccapp.com">hamam@gccapp.com</a>. وقد نحتاج
+<a dir="ltr" href="mailto:hamam@gccapps.com">hamam@gccapps.com</a>. وقد نحتاج
 إلى التحقق من هويتك قبل إتمام الطلب.
 
 ## ٦. المعالجة الدولية
@@ -196,7 +196,7 @@ Cloud Functions الخاصة بنا في منطقة `us-central1`. وعندما 
 
 للاستفسارات أو الطلبات أو الشكاوى المتعلقة بالخصوصية:
 
-**البريد الإلكتروني:** <a dir="ltr" href="mailto:hamam@gccapp.com">hamam@gccapp.com</a>
+**البريد الإلكتروني:** <a dir="ltr" href="mailto:hamam@gccapps.com">hamam@gccapps.com</a>
 
 تصف هذه النسخة العربية و[النسخة الإنجليزية]({{ '/' | relative_url }}) الممارسات
 نفسها. وفي حال وجود اختلاف بين الترجمتين، تكون النسخة الإنجليزية هي المعتمدة

@@ -12,7 +12,7 @@ text_direction: rtl
 [English]({{ '/support/' | relative_url }})
 
 هل تحتاج إلى مساعدة في استخدام ورقة الخليج؟ راسلنا على
-<a dir="ltr" href="mailto:hamam@gccapp.com">hamam@gccapp.com</a>، واذكر وصفًا
+<a dir="ltr" href="mailto:hamam@gccapps.com">hamam@gccapps.com</a>، واذكر وصفًا
 مختصرًا للمشكلة وطراز جهازك وإصدار iOS. لا ترسل كلمات المرور أو بيانات بطاقات
 الدفع أو رموز التحقق.
 

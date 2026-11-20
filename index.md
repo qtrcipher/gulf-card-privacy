@@ -162,7 +162,7 @@ You can:
 - delete your account using the in-app process described above.
 
 For any request you cannot complete in the app, email
-[hamam@gccapp.com](mailto:hamam@gccapp.com). We may need to verify your
+[hamam@gccapps.com](mailto:hamam@gccapps.com). We may need to verify your
 identity before completing a request.
 
 ## 6. International processing
@@ -200,7 +200,7 @@ Where required, we will provide additional notice or request consent.
 
 For privacy questions, requests, or complaints:
 
-**Email:** [hamam@gccapp.com](mailto:hamam@gccapp.com)
+**Email:** [hamam@gccapps.com](mailto:hamam@gccapps.com)
 
 This English policy and the [Arabic version]({{ '/ar/' | relative_url }})
 describe the same practices. If a translation differs, the English version
