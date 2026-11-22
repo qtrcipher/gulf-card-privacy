@@ -11,8 +11,8 @@ text_direction: ltr
 
 [Support]({{ '/support/' | relative_url }})
 
-**Last updated:** July 19, 2026<br>
-**Effective date:** July 19, 2026
+**Last updated:** November 22, 2026<br>
+**Effective date:** November 22, 2026
 
 This Privacy Policy explains how Gulf Card ("we," "us," or "the app"),
 operated by Hamam Alabdulla, collects, uses, shares, retains, and protects
@@ -33,8 +33,7 @@ policy, please do not use the app.
 - **Age verification.** You submit a date of birth to a secured Cloud Function
   to confirm that you meet the minimum age. We do not persist the raw date of
   birth. We store a SHA-256 hash created with a random per-user salt, along
-  with the verification time. An under-minimum attempt may create a
-  PII-free security event without the submitted date or its hash.
+  with the verification time. We record account-linked verification events. Successful verification may log the calculated age. Under-minimum and conflicting attempts log the account ID, event and time.
 
 ### Gameplay and integrity information
 
@@ -51,9 +50,9 @@ collect chat messages.
   retain signed transaction identifiers, original transaction identifiers,
   product IDs, purchase and expiry dates, entitlement status, and refund or
   revocation events to deliver chips or subscriptions, prevent duplicate
-  credits, and maintain accounting records. We do not receive your full card
+  credits, and maintain accounting records. Existing chip balances and verified legacy grants are retained. In version 1.4 the monthly subscription provides private hosting and the VIP badge. We do not receive your full card
   or bank-account details.
-- **Advertising.** The app includes Google Mobile Ads, including rewarded-ad
+- **Advertising in earlier versions.** Version 1.4 removes advertising and the tracking request. Version 1.3 includes Google Mobile Ads, including rewarded-ad
   support. Google may process device, usage, and ad-interaction information
   under its terms and your consent choices. iOS App Tracking Transparency
   controls whether the advertising identifier (IDFA) is available for
@@ -64,7 +63,7 @@ collect chat messages.
 
 - **Notifications.** If enabled, we store an FCM registration token, an
   app-scoped device identifier, APNs environment, and notification preferences
-  to deliver turn, invitation, and reward reminders.
+  to deliver turn and invitation notifications.
 - **Diagnostics and analytics.** Firebase Crashlytics and Firebase Analytics
   may process crash traces, diagnostics, device and app information, and usage
   events. Firebase Remote Config and App Check process technical information
@@ -92,7 +91,7 @@ We use information to:
 - send notifications selected by the user;
 - detect cheating, fraud, abuse, and security incidents;
 - diagnose crashes, measure app performance, and improve features;
-- provide advertising and measure ad delivery, subject to applicable choices;
+- provide advertising in earlier versions and measure its delivery, subject to applicable choices;
 - answer support and privacy requests; and
 - comply with legal, accounting, and App Store obligations.
 
@@ -102,7 +101,7 @@ We disclose information only as needed to:
 
 - **Google and Firebase:** authentication, Firestore, Cloud Functions, Cloud
   Storage, Cloud Messaging, App Check, Remote Config, Analytics, Crashlytics,
-  and Google Mobile Ads;
+  and, in earlier versions, Google Mobile Ads;
 - **Apple:** Sign in with Apple, APNs, StoreKit/App Store purchases, and Game
   Center;
 - **Other players:** display name, country or regional indicator, game actions,
@@ -156,7 +155,7 @@ You can:
 
 - edit supported profile and notification settings in the app;
 - disable notifications in the app or iOS Settings;
-- revisit ad consent choices in Profile when privacy options are available;
+- manage consent choices when an earlier version offers advertising;
 - change tracking permission in iOS Settings;
 - request an export through the available in-app privacy flow; and
 - delete your account using the in-app process described above.
