@@ -30,8 +30,8 @@ policy, please do not use the app.
 - **Profile information.** We may store the display name, country, language,
   and notification preferences you provide. Your display name and limited
   gameplay profile may be visible to other players.
-- **Age verification.** You submit a date of birth to a secured Cloud Function
-  to confirm that you meet the minimum age. We do not persist the raw date of
+- **Age verification.** To play online with other people, you submit your date of birth
+  to a secured Cloud Function to confirm you are at least 17. We do not persist the raw date of
   birth. We store a SHA-256 hash created with a random per-user salt, along
   with the verification time. We record account-linked verification events. Successful verification may log the calculated age. Under-minimum and conflicting attempts log the account ID, event and time.
 
@@ -173,8 +173,9 @@ handled using contractual or other legally recognized safeguards.
 
 ## 7. Children and age restriction
 
-Gulf Card is intended for users aged 17 and older. If a submitted date of birth
-indicates that the user is under 17, access is blocked. If you believe that we
+Anyone can play against the computer as a guest. To play online with other
+people, you must declare your date of birth and be at least 17. If the date you
+enter indicates that you are under 17, online play with other people is blocked. If you believe that we
 have collected personal information from someone under 17, contact us so we
 can investigate and delete it as appropriate.
 
