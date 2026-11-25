@@ -11,8 +11,8 @@ text_direction: ltr
 
 [Support]({{ '/support/' | relative_url }})
 
-**Last updated:** November 22, 2026<br>
-**Effective date:** November 22, 2026
+**Last updated:** November 26, 2026<br>
+**Effective date:** November 26, 2026
 
 This Privacy Policy explains how Gulf Card ("we," "us," or "the app"),
 operated by Hamam Alabdulla, collects, uses, shares, retains, and protects
@@ -30,10 +30,7 @@ policy, please do not use the app.
 - **Profile information.** We may store the display name, country, language,
   and notification preferences you provide. Your display name and limited
   gameplay profile may be visible to other players.
-- **Age verification.** To play online with other people, you submit your date of birth
-  to a secured Cloud Function to confirm you are at least 17. We do not persist the raw date of
-  birth. We store a SHA-256 hash created with a random per-user salt, along
-  with the verification time. We record account-linked verification events. Successful verification may log the calculated age. Under-minimum and conflicting attempts log the account ID, event and time.
+- **Earlier account records.** Version 1.4 does not collect age information. Version 1.3 can still submit age information for verification. The server processes it transiently and retains a salted hash and verification time. Successful checks may log calculated age. Rejected or conflicting checks can record account ID, event and time. Existing records follow the retention and account-deletion practices below.
 
 ### Gameplay and integrity information
 
@@ -49,9 +46,7 @@ collect chat messages.
 - **App Store purchases.** Apple processes payment details. We receive and
   retain signed transaction identifiers, original transaction identifiers,
   product IDs, purchase and expiry dates, entitlement status, and refund or
-  revocation events to deliver chips or subscriptions, prevent duplicate
-  credits, and maintain accounting records. Existing chip balances and verified legacy grants are retained. In version 1.4 the monthly subscription provides private hosting and the VIP badge. We do not receive your full card
-  or bank-account details.
+  revocation events to provide subscriptions, fulfill earlier purchases and rewards once, and maintain accounting records. Historical account values remain stored on the server. Monthly VIP provides private-room hosting and the VIP badge. We do not receive your full card or bank-account details.
 - **Advertising in earlier versions.** Version 1.4 removes advertising and the tracking request. Version 1.3 includes Google Mobile Ads, including rewarded-ad
   support. Google may process device, usage, and ad-interaction information
   under its terms and your consent choices. iOS App Tracking Transparency
@@ -87,7 +82,7 @@ We use information to:
 
 - authenticate users and maintain accounts;
 - operate multiplayer and AI games and synchronize game state;
-- provide wallets, purchases, subscriptions, rewards, and leaderboards;
+- provide purchases, subscriptions, legacy rewards, and leaderboards;
 - send notifications selected by the user;
 - detect cheating, fraud, abuse, and security incidents;
 - diagnose crashes, measure app performance, and improve features;
@@ -139,7 +134,7 @@ Backups and provider systems may take additional time to complete deletion.
 
 To delete your account in the app, open **Profile → Danger Zone → Delete
 Account** and confirm. This removes the Firebase account and profile tree,
-notification tokens, private wallet data, App Store ownership mappings,
+notification tokens, private purchase and reward records, App Store ownership mappings,
 avatars and pending export files, removes waiting-room membership, and
 anonymizes applicable active-match references. Apple purchase records subject
 to legal retention are handled as described above. You may also contact us at
@@ -171,16 +166,9 @@ other than your own, including the United States, where Firebase Authentication
 and our `us-central1` Cloud Functions operate. Where required, transfers are
 handled using contractual or other legally recognized safeguards.
 
-## 7. Children and age restriction
+## 7. Children’s privacy
 
-Anyone can play against the computer as a guest. To play online with other
-people, you must declare your date of birth and be at least 17. If the date you
-enter indicates that you are under 17, online play with other people is blocked. If you believe that we
-have collected personal information from someone under 17, contact us so we
-can investigate and delete it as appropriate.
-
-Virtual chips have no cash value and cannot be redeemed, transferred for
-currency, or used outside the app.
+Guests can play against the computer. Sign in with Apple to play with others. Parents and guardians can contact hamam@gccapps.com with questions about a child’s information or to request deletion.
 
 ## 8. Security
 
