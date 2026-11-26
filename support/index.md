@@ -17,7 +17,7 @@ payment-card details, or verification codes.
 ## Purchases and subscriptions
 
 Apple processes all payments. If a completed purchase is not visible, open
-**Wallet → Restore previous purchases**. For refunds or billing questions, use
+**VIP Membership → Restore previous purchases**. For refunds or billing questions, use
 [Apple's purchase support](https://support.apple.com/billing).
 
 ## Notifications
